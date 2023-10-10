@@ -16,7 +16,7 @@ import java.io.IOException
 
 class AmphibiansViewModel(private val amphibiansRepository : AmphibiansRepository) : ViewModel() {
 
-    private var uiState: AmphibiansUiState by mutableStateOf(AmphibiansUiState.Loading)
+    var uiState: AmphibiansUiState by mutableStateOf(AmphibiansUiState.Loading)
 
     init {
         getAmphibians()
