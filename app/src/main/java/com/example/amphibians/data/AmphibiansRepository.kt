@@ -10,5 +10,5 @@ interface AmphibiansRepository{
 class NetworkAmphibiansRepository(
     private val amphibiansApiClient: AmphibiansApiClient
 ) : AmphibiansRepository {
-    override suspend fun getAmphibians(): List<Amphibian> = amphibiansApiClient.get()
+    override suspend fun getAmphibians(): List<Amphibian> = amphibiansApiClient.getAmphibians()
 }

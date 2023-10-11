@@ -5,6 +5,5 @@ import retrofit2.http.GET
 
 interface AmphibiansApiClient {
     @GET("amphibians")
-    suspend fun get(): List<Amphibian>
-
+    suspend fun getAmphibians(): List<Amphibian>
 }
